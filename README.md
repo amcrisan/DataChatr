@@ -1,28 +1,15 @@
-# create-svelte
+# DataChatr
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A general purpose Svelte-based front end that is intended to support experimenting with conversational user interfaces that support data analysis and visualization. Calls out to [DataAgent](https://github.com/amcrisan/DataAgent) backend.
+
+
+## Getting Started
+This project is currently under active development.
+
+The project requires [DataAgent](https://github.com/amcrisan/DataAgent), please install and review instructions for running its API.
+
+Install the dependencies dependencies using ```npm install``` then run using ``` npm dev -- --open```.
+Be sure that DataAgent is up and running ahead of running this application.
 
 
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

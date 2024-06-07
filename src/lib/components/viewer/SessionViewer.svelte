@@ -3,6 +3,7 @@
     import { writable } from 'svelte/store';
     import { linear } from 'svelte/easing';
   
+    import ListMessages from '$lib/components/viewer/ListMessages.svelte'
     //import LinearConversation from './LinearConversation.svelte';
     //import ThreadedConversation from './ThreadedConversation.svelte';
   
@@ -30,9 +31,19 @@
   
   </script>
   
-  {#if $sessionData}
-    <h3> You have clicekd on {sessionName}</h3>
-  {:else}
-    <h3> You need to click on a session</h3>
-  {/if}
+  <div class="container">
+    {#if $sessionData}
+      <ListMessages sessionData={$sessionData}/>
+    {:else}
+      <h3> You need to click on a session</h3>
+    {/if}
+  </div>
+
+  <style>
+    .container{
+      width:100%;
+      height:100%;
+      overflow-y: auto;
+    }
+  </style>
   
