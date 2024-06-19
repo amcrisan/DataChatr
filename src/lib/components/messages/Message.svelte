@@ -6,7 +6,7 @@
     import { createEventDispatcher } from 'svelte';
     const dispatch = createEventDispatcher();
   
-    import MessageContent from "./MessageContent.svelte";
+    import MessageContent from "$lib/components/messages/MessageContent.svelte";
   
     // Function to determine additional class based on thread_id
     function threadClass() {

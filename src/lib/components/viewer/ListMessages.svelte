@@ -1,6 +1,6 @@
 <script lang="ts">
     export let sessionData:any;
-    import Message from '../chat/Message.svelte';
+    import Message from '$lib/components/messages/Message.svelte';
   </script>
   
   {#each sessionData as item}
